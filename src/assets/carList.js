@@ -18,6 +18,7 @@ const cars = [
 
 export default cars.map((car,index) => {
   return {
+    id: index,
     name: car,
     photo: imgList[`img${index+1}`]
   }
