@@ -1,4 +1,4 @@
-import { ScrollView, Switch, Text, TextInput, View } from 'react-native'
+import { ScrollView, Switch, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
 import { Picker } from '@react-native-picker/picker'
@@ -22,7 +22,7 @@ export default () => {
           <Picker
             style={styles.picker}
             selectedValue={tipo}
-            onValueChange={(value,index) => setTipo(value)}
+            onValueChange={(value) => setTipo(value)}
           >
             <Picker.Item key={0} value='avulso' label="Avulso" />
             <Picker.Item key={1} value='mensal' label="Mensal" />
@@ -34,7 +34,7 @@ export default () => {
           <Picker
             style={styles.picker}
             selectedValue={periodo}
-            onValueChange={(value,index) => setPeriodo(value)}
+            onValueChange={(value) => setPeriodo(value)}
           >
             <Picker.Item key={0} value='diurno' label="Diurno" />
             <Picker.Item key={1} value='noturno' label="Noturno" />
@@ -45,7 +45,7 @@ export default () => {
           <Text style={styles.text}>Incluir seguro:</Text>
           <Switch
             value={seguro}
-            onValueChange={value => setSeguro(!seguro)}
+            onValueChange={() => setSeguro(!seguro)}
           />
         </View>
 

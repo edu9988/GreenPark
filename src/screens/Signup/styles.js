@@ -16,9 +16,9 @@ export default StyleSheet.create({
     borderRadius: 10,
     fontSize: 24,
     width: 250,
-    height: 50,    
+    height: 50,
     marginHorizontal: 'auto',
-    marginTop: 15   
+    marginTop: 15
   },
   show: {
     textAlign: 'center',

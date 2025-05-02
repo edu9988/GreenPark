@@ -5,9 +5,9 @@ const imgList = {
 }
 
 const services = [
-  "Estacionamento",
-  "Lavagem",
-  "Reparos"
+  'Estacionamento',
+  'Lavagem',
+  'Reparos'
 ]
 
 export default services.map((service,index) => {

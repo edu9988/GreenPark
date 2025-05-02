@@ -1,7 +1,6 @@
-import { ScrollView, Switch, Text, TextInput, View } from 'react-native'
+import { ScrollView, Switch, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
-import { Picker } from '@react-native-picker/picker'
 
 import styles from './styles'
 import Button from '../../components/Button'
@@ -20,7 +19,7 @@ export default () => {
           <Text style={styles.text}>Com cera?</Text>
           <Switch
             value={cera}
-            onValueChange={value => setCera(!cera)}
+            onValueChange={() => setCera(!cera)}
           />
         </View>
 
@@ -28,7 +27,7 @@ export default () => {
           <Text style={styles.text}>Lavar interior?</Text>
           <Switch
             value={interna}
-            onValueChange={value => setInterna(!interna)}
+            onValueChange={() => setInterna(!interna)}
           />
         </View>
 

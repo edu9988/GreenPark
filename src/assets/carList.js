@@ -8,12 +8,12 @@ const imgList = {
 }
 
 const cars = [
-  "Ferrari",
-  "Maybach Exelero",
-  "Zenvo",
-  "Rolls Royce",
-  "Desconhecido",
-  "Desconhecido"
+  'Ferrari',
+  'Maybach Exelero',
+  'Zenvo',
+  'Rolls Royce',
+  'Desconhecido',
+  'Desconhecido'
 ]
 
 export default cars.map((car,index) => {

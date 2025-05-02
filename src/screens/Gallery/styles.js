@@ -7,6 +7,7 @@ export default StyleSheet.create({
   },
   header: {
     textAlign: 'center',
-    fontSize: 30
+    fontSize: 30,
+    backgroundColor: 'red'
   }
 })
